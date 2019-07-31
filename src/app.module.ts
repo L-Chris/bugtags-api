@@ -1,17 +1,17 @@
-import { Module, MiddlewareConsumer, CacheModule, CacheInterceptor } from '@nestjs/common';
+import { Module, CacheModule, CacheInterceptor } from '@nestjs/common';
 import { APP_INTERCEPTOR } from '@nestjs/core';
 import { CoreModule } from './modules/core/core.module';
-import { UserModule } from './modules/user/user.module';
+import { UserModule } from './modules/users/users.module';
 import { AppsModule } from './modules/apps/apps.module';
-import { UserController } from './modules/user/user.controller';
-import { AppsController } from './modules/apps/apps.controller';
+import { CompaniesModule } from './modules/companies/companies.module';
 
 @Module({
   imports: [
     CacheModule.register(),
     CoreModule,
     AppsModule,
-    UserModule
+    UserModule,
+    CompaniesModule
   ],
   providers: [
     {
@@ -20,12 +20,4 @@ import { AppsController } from './modules/apps/apps.controller';
     }
   ]
 })
-export class AppModule {
-  constructor() {}
-
-  configure(consumer: MiddlewareConsumer) {
-    consumer
-      .apply()
-      .forRoutes(UserController, AppsController)
-  }
-}
+export class AppModule {}

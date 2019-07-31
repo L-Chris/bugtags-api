@@ -20,7 +20,7 @@
 
 "@nestjs/common@^6.5.3":
   version "6.5.3"
-  resolved "https://registry.npm.taobao.org/@nestjs/common/download/@nestjs/common-6.5.3.tgz#25a3916b53f1e681640641bdb96a40bb37a15515"
+  resolved "http://npm.ekwing.com/@nestjs%2fcommon/-/common-6.5.3.tgz#25a3916b53f1e681640641bdb96a40bb37a15515"
   integrity sha1-JaORa1Px5oFkBkG9uWpAuzehVRU=
   dependencies:
     axios "0.19.0"
@@ -29,7 +29,7 @@
 
 "@nestjs/core@^6.5.3":
   version "6.5.3"
-  resolved "https://registry.npm.taobao.org/@nestjs/core/download/@nestjs/core-6.5.3.tgz#0cfd4388f07f15ab7b49aa0ff7ed594f51446378"
+  resolved "http://npm.ekwing.com/@nestjs%2fcore/-/core-6.5.3.tgz#0cfd4388f07f15ab7b49aa0ff7ed594f51446378"
   integrity sha1-DP1DiPB/Fat7SaoP9+1ZT1FEY3g=
   dependencies:
     "@nuxtjs/opencollective" "0.2.2"
@@ -41,7 +41,7 @@
 
 "@nestjs/platform-express@^6.5.3":
   version "6.5.3"
-  resolved "https://registry.npm.taobao.org/@nestjs/platform-express/download/@nestjs/platform-express-6.5.3.tgz#0260f2c13e5914dc121dbd3a221afb5305b9f813"
+  resolved "http://npm.ekwing.com/@nestjs%2fplatform-express/-/platform-express-6.5.3.tgz#0260f2c13e5914dc121dbd3a221afb5305b9f813"
   integrity sha1-AmDywT5ZFNwSHb06Ihr7UwW5+BM=
   dependencies:
     body-parser "1.19.0"
