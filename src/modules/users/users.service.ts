@@ -1,10 +1,10 @@
-import { Injectable } from '@nestjs/common';
+import { Injectable, HttpService } from '@nestjs/common';
 
 @Injectable()
 export class UserService {
-  constructor() {}
+  constructor(private httpService: HttpService) {}
 
-  find() {
-    return []
+  findOne({ id }) {
+    return this.httpService.get(`/users/${id}`).toPromise()
   }
 }
