@@ -7,4 +7,8 @@ export class UserService {
   findOne({ id }) {
     return this.httpService.get(`/users/${id}`).toPromise()
   }
+
+  getNotifySetting({ id }) {
+    return this.httpService.get(`/users/${id}/notify_setting`)
+  }
 }

@@ -6,10 +6,12 @@ import { AppsModule } from './modules/apps/apps.module';
 import { CompaniesModule } from './modules/companies/companies.module';
 import { PassportModule } from './modules/passport/passport.module';
 import { AuthModule } from './modules/auth/auth.module';
+import { FilesModule } from './modules/files/files.module';
 import { UserController } from './modules/users/users.controller';
 import { AppsController } from './modules/apps/apps.controller';
 import { CompaniesController } from './modules/companies/companies.controller';
 import { AuthController } from './modules/auth/auth.controller';
+import { FilesController } from './modules/files/files.controller';
 import { AuthMiddleware } from './middlewares/auth.middleware';
 import { BrowserMiddleware } from './middlewares/browser.middleware';
 
@@ -21,7 +23,8 @@ import { BrowserMiddleware } from './middlewares/browser.middleware';
     UserModule,
     CompaniesModule,
     PassportModule,
-    AuthModule
+    AuthModule,
+    FilesModule
   ],
   providers: [
     {
@@ -40,6 +43,6 @@ export class AppModule {
 
     consumer
       .apply(AuthMiddleware)
-      .forRoutes(UserController, AppsController, CompaniesController)
+      .forRoutes(UserController, AppsController, CompaniesController, FilesController)
   }
 }
