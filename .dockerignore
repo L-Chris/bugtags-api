@@ -1,0 +1,6 @@
+.git
+.gitignore
+node_modules
+Jenkinsfile
+docker-compose.yml
+README.md
